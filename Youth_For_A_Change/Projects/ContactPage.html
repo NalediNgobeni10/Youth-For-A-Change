@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactTheTeam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <a href="" class="logo"><img src="images/logo-removebg-preview (1).png" alt=""></a>
+        <div class="list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects1.html">Projects</a></li>
+                <li><a href="About Us.html">About us</a></li>
+                <li><a href="donationPage.html">Donation</a></li>
+                <li><a href="Volunteer.html">Volunteer</a></li>
+                <li class="main"><a href="ContactPage.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="section-wrapper">
+
+        <div class="box-wrapper">
+
+            <div class="info-wrap">
+                <h2 class="info-title">Contact Information</h2>
+                <h3 class="info-sub-title">If you have any questions, feedback, or inquiries, feel free to get in touch
+                    with us! We’re here to help and would love to hear from you. You can reach us by phone, email, or
+                    through our contact form. Our team is committed to responding as quickly as possible to ensure you
+                    get the assistance you need.</h3>
+                <ul class="info-details">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Telephone: </span> <a href="tel:+27 658 41258">+27 658 41258</a>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Email: </span> <a href="mailto:info@yoursite.com">NGO@gmail.com</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i></i>
+                        <span>Location: </span> <a href="">55 Andrews Drive</a>
+                    </li>
+                </ul>
+
+
+
+
+            </div>
+            <div class="form-wrap">
+                <form id="contactForm" onsubmit="return false;">
+                    <h2 class="form-title">Send us a message</h2>
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <input type="text" id="fNameInput" class="fname" placeholder="First Name">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="lNameInput" class="lname" placeholder="Last Name">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="emailInput" class="email" placeholder="Mail">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="number"  id="phoneInput" class="phone" placeholder="Phone">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" id="messageInput" placeholder="Write your message"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit"  id="confirm" value="Send message" class="submit-button">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="confirmation-modal" class="confirmation hidden">
+        <h2>THANK YOU!</h2>
+        <p>Your message has been sent. We'll contact you shortly!</p>
+        <button id="confirmation-ok">OK</button>
+    </div>
+
+    <section class="footer">
+        <div class="foot-container">
+            <div class="Contact">
+                <img class="pic1" src="images/logo-removebg-preview (1).png" width="150">
+                <h2>Contact Info:</h2>
+                <p><span>Email:</span> NGO@gmail.com</p>
+                <p><span>Telephone:</span> +27 658 41258</p>
+                <p><span>Location:</span> 55 Andrews Drive, Cape Town, 7925</p>
+                <div class="footer-icons">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+            </div>
+
+            <div class="foot-link">
+                <h1>Quick links</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Volunteer.html">Volunteer</a></li>
+                    <li class="main"><a href="ContactPage.html">Contact</a></li>
+                    <li><a href="donationPage.html">Donate</a></li>
+                    <li><a href="About Us.html">About</a></li>
+                    <li><a href="projects1.html">Projects</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h1>Subscribe to Our Newsletter</h1>
+                <p>Get the latest updates and news straight to your inbox.</p>
+                <div id="newsletter-container">
+                    <form action="#" method="post" class="newsletter-form" id="newsletterForm">
+                        <input type="email" name="email" id="eInput" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                
+                <ul>
+                    <li><a href="">Cookie Policy</a></li>
+                    <li class="middle-man"><a href="">Privacy Policy</a></li>
+                    <li><a href="">Frequently asked questions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <hr>
+            <p>&copyright preserved by Youth for a Change</p>
+        </div>
+    </section>
+
+    <script src="java/contactJava.js"></script>
+
+</body>
+
+</html>

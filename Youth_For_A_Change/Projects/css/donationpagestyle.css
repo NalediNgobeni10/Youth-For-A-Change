@@ -1,0 +1,532 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+body{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgb(215, 215, 215);
+    
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+    border-bottom: 1px solid grey;
+    box-shadow: 0 0 10px black;
+    transition: background-color 0.6s ease;
+    padding: 0 135px;
+}
+
+nav.scrolled {
+    background-color: rgb(203, 203, 203); 
+}
+.logo img{
+    width: 100px;
+}
+.list{
+    flex: 1;
+    text-align: end;
+}
+.list ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 17px;
+    margin: 0 8px;
+    padding: 10px 13px;
+    transition: 0.6s ease;
+}
+.list ul li a{
+    text-decoration: none;
+    color: #896c22;
+    font-weight: 600;
+}
+.list ul li:hover,
+.list ul .main{
+    border-radius: 18px;
+    background-color: #9CBA70;
+}
+
+/*footer*/
+.footer{
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0 -1px 7px grey;
+}
+
+.foot-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 135px;
+}
+
+.Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Contact h2{
+    font-size: 25px;
+    padding-bottom: 8px;
+    padding-top: 13px;
+}
+
+.Contact p{
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.Contact span{
+    font-weight: bolder;
+}
+
+.footer-icons{
+    display: flex;
+    padding: 10px 0;
+    flex-direction: row;
+}
+
+.footer-icons i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    margin: 10px 0;
+    margin-right: 20px;
+    background-color: #9CBA70;
+    color: #896c22;
+    transition: 0.05 ease;
+}
+
+.footer-icons a{
+    text-decoration: none;
+}
+
+.footer-icons i:hover{
+    box-shadow: 0 0 10px grey;
+    transform: scale(1.07);
+}
+
+.foot-link{
+    margin-top: 15px;
+    padding: 0 20px;
+}
+
+.foot-link h1{
+    font-size: 25px;
+}
+.foot-link ul li{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 16px 0;
+    transition: 0.5s ease;
+}
+
+.foot-link ul li a{
+    text-decoration: none;
+    display: block;
+    color: #896c22;
+    padding: 4px 7px;
+}
+
+
+.foot-link ul li a:hover,
+.foot-link ul .main a{
+    border-radius: 18px;
+    background-color: #9CBA70;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.newsletter h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter-form input{
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.newsletter-form input::placeholder{
+    color: #896c22;
+}
+.newsletter-form button {
+    padding: 10px 15px;
+    background-color: #9CBA70;
+    color: #896c22;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    box-shadow: 0 0 10px grey;
+}
+
+.newsletter ul{
+    display: flex;
+    justify-content: end;
+}
+.newsletter ul li{
+    display: inline-block;
+    position: relative;
+    top: 120px;
+    padding: 0 5px;
+}
+
+.newsletter ul .middle-man{
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+.newsletter ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #896c22;
+}
+
+.copyright{
+    padding: 0 135px;
+    align-items: center;
+}
+
+.copyright p{
+    font-size: 15px;
+    text-align: center;
+    padding: 18px 0;
+}
+
+.hinge{
+    background-image: url(../images/hingry.jpg);
+    height: 750px;
+    background-size: cover;
+}
+
+.donation-container{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    max-width: 900px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border: 1px solid rgb(32, 32, 32);
+    box-shadow: 0 0 10px;
+    min-height: 530px;
+}
+
+.donation-words{
+    width: 50%;
+    text-align: center;
+    background-color: #9cba70;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    border-right: 1px solid rgb(32, 32, 32);
+
+}
+
+.donation-words h2{
+    font-size: 38px;
+    margin-bottom: 10%;
+    color: #896c22;
+}
+
+.donation-words p{
+   color: rgb(240, 240, 240); 
+   font-size: 18px;
+   line-height: 28px;
+}
+
+.donate-message{
+    width: 50%;
+    padding: 25px;
+    background-color: white;
+}
+
+.donate-message .words{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.donate-message .words h1{
+    font-size: 32px;
+    color: #9CBA70;
+    font-weight: bolder;
+}
+
+.donate-message label{
+    display: block;
+    margin-bottom: 8px;
+    color: #896c22;
+    font-size: 16px;
+}
+
+.donate-message input[type="number"],
+.donate-message  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#recurring-options {
+    margin-top: 15px;
+  }
+  
+  #recurring-options label {
+    display: block;
+    margin-bottom: 8px;
+    color: #896c22;
+    font-size: 16px;
+  }
+  
+  #recurring-options select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .transaction-fee {
+    font-size: 14px;
+    color: #555;
+  }
+
+  .but[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #9CBA70;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #87a25f;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.popup-content h2 {
+    margin-bottom: 15px;
+}
+
+.popup-content button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #9CBA70;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #87a25f;
+}
+
+.input-field2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#toggle-cvv-visibility {
+    margin-top: 5px;
+    background-color: #9CBA70;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#toggle-cvv-visibility:hover {
+    background-color: #87a25f;
+}
+
+
+.chris{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/hingry.jpg);
+    background-size: cover;
+}
+
+.Pcontainer{
+    width: 750px;
+    height: 500px;
+    border: 1px solid;
+    box-shadow: 0 0 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content:space-around;
+}
+
+.Pcontainer h1{
+    text-align: center;
+    color: #9cba70;
+    font-size: 35px;
+}
+
+.first-row{
+     display: flex;
+}
+
+.owner{
+    width: 100%;
+    margin-right: 40px;
+}
+
+
+
+.input-field2 input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.selection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selection select{
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.Pcontainer a{
+    background-color: #9CBA70;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.Pcontainer a:hover{
+    background-color: #87a25f;
+}
+
+.cards img{
+    width: 100px;
+}
+
+.Pcontainer h3{
+    color: #896c22;
+}
+
+.confirmation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1000;
+    display: none; 
+}
+
+.confirmation h2 {
+    color: #9cba70;
+    margin-bottom: 15px;
+}
+
+.confirmation button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #9CBA70;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hidden {
+    display: none; 
+}
+
+
+
+
+
+
+
+
+
+
+

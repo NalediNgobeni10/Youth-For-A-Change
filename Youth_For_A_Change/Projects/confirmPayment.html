@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/donationpagestyle.css">
+    <script src="https://kit.fontawesome.com/58e6dfcba6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <a href="" class="logo"><img src="images/logo-removebg-preview (1).png" alt=""></a>
+        <div class="list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects1.html">Projects</a></li>
+                <li><a href="About Us.html">About us</a></li>
+                <li class="main"><a href="donationPage.html">Donation</a></li>
+                <li><a href="Volunteer.html">Volunteer</a></li>
+                <li><a href="ContactPage.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="chris">
+    <div class="Pcontainer">
+        <h1>Enter Details</h1>
+        <div class="first-row">
+            <div class="owner">
+                <h3>Owner</h3>
+                <div class="input-field2">
+                    <input type="text" placeholder="Owner" required>
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field2">
+                    <input type="password" inputmode="numeric" pattern="\d*" id="cvv-input" maxlength="4" placeholder="CVV" required>
+                    <button type="button" id="toggle-cvv-visibility">Show</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Card Number</h3>
+                <div class="input-field2">
+                    <input type="text" id="card-number-input" maxlength="16" placeholder="Card Number" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="third-row">
+            <h3>Expiration Date</h3>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months" required>
+                        <option value="">Select Month</option>
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                    </select>
+                    <select name="years" id="years" required>
+                        <option value="">Select Year</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                    </select>
+                </div>
+                <div class="cards">
+                    <img src="images/mc.png" alt="MasterCard">
+                    <img src="images/vi.png" alt="Visa">
+                    <img src="images/pp.png" alt="PayPal">
+                </div>
+            </div>
+        </div>
+        <a href="#" class="confirm-button">Confirm</a>
+    </div>
+</div>
+
+<div id="confirmation-modal" class="confirmation hidden">
+    <h2>THANK YOU!</h2>
+    <p>Your donation is being processed. You will receive a confirmation email shortly.</p>
+    <button id="confirmation-ok">OK</button>
+</div>
+
+
+
+
+<div id="confirmation-modal" class="confirmation hidden">
+    <h2>THANK YOU!</h2>
+    <p>Your donation is being processed. You will receive a confirmation email shortly.</p>
+    <button id="confirmation-ok">OK</button>
+</div>
+
+
+
+
+
+<section class="footer">
+    <div class="foot-container">
+        <div class="Contact">
+            <img class="pic1" src="donateImages/logo-removebg-preview (1).png" width="150">
+            <h2>Contact Info:</h2>
+            <p><span>Email:</span> NGO@gmail.com</p>
+            <p><span>Telephone:</span> +27 658 41258</p>
+            <p><span>Location:</span> 55 Andrews Drive, Cape Town, 7925</p>
+            <div class="footer-icons">
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+            </div>
+        </div>
+
+<div class="foot-link">
+            <h1>Quick  links</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Volunteer.html">Volunteer</a></li>
+                <li><a href="ContactPage.html">Contact</a></li>
+                <li class="main"><a href="donationPage.html">Donate</a></li>
+                <li><a href="About Us.html">About</a></li>
+                <li><a href="projects1.html">Projects</a></li>
+            </ul>
+        </div>
+<div class="newsletter">
+            <h1>Subscribe to Our Newsletter</h1>
+            <p>Get the latest updates and news straight to your inbox.</p>
+            <div id="newsletter-container">
+                <form action="#" method="post" class="newsletter-form" id="newsletterForm">
+                    <input type="email" name="email" id="emailInput" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            
+            <ul>
+                <li><a href="">Cookie Policy</a></li>
+                <li class="middle-man"><a href="">Privacy Policy</a></li>
+                <li><a href="">Frequently asked questions</a></li>
+            </ul>
+        </div>
+    </div>
+<div class="copyright">
+    <hr>
+    <p>&copyright preserved by Company Name</p>
+</div>
+</section>
+
+
+<script src="java/donationJava.js"></script>
+    
+</body>
+</html>

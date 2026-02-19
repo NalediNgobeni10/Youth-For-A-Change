@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Page</title>
+    <link rel="stylesheet" href="css/VolunteerCSS.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/58e6dfcba6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav>
+        <a href="" class="logo"><img src="images/logo-removebg-preview (1).png" alt=""></a>
+        <div class="list">
+            <ul>
+                <li ><a href="index.html">Home</a></li>
+                <li><a href="projects1.html">Projects</a></li>
+                <li><a href="About Us.html">About us</a></li>
+                <li><a href="donationPage.html">Donation</a></li>
+                <li class="main"><a href="Volunteer.html">Volunteer</a></li>
+                <li><a href="ContactPage.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Volunteer Start -->
+    <div class="container">
+        <section id="volunteerNow">
+            <div class="volunteer">
+                <div class="volunteer-form">
+                    <h1><u><span>Volunteer</span> Form</u></h1>
+                    <form id="volunteerForm" onsubmit="return false;"> <!-- Prevent default form submission -->
+                        <div class="control-group">
+                            <input type="text" id="nameInput" class="form-control" placeholder="Name" required="required" title="Please enter your full name" />
+                        </div>
+                        <div class="control-group">
+                            <input type="email" id="emailInput" class="form-control" placeholder="Email" required="required" title="Please enter your email"/>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" id="mobileInput" class="form-control" placeholder="Mobile number" required="required" />
+                        </div>
+                        <div class="control-group">
+                            <select id="interestSelect" class="form-control" required="required" title="Please select your area of Interest">
+                                <option value="" disabled selected>Select Area of Interest</option>
+                                <option value="environment">Environment</option>
+                                <option value="education">Education</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="community service">Community Service</option>
+                            </select>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" id="availabilityInput" class="form-control" placeholder="Availability" required="required" title="Please input your Availability" />
+                        </div>
+                        <div class="control-group">
+                            <textarea id="reasonInput" class="form-control" placeholder="Why you want to become a volunteer?" required="required"></textarea>
+                        </div>
+                        <div>
+                            <button id="confirmButton" class="btn btn-custom" type="button">Become a volunteer</button> <!-- Prevents form submission -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="volunteer-content">
+                <div class="section-header">
+                    <p>Become A Volunteer</p>
+                    <h2>Join Us in Making a World of Difference</h2>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="confirmation-modal" class="confirmation hidden">
+        <h2>THANK YOU!</h2>
+        <p>We really appreciate your willingness to make a Difference. We will be contacting you via email with the rest of the details on the area of interest that you have chosen.</p>
+        <button id="confirmation-ok">OK</button>
+    </div>
+
+    <section class="footer">
+        <div class="foot-container">
+            <div class="Contact">
+                <img class="pic1" src="images/logo-removebg-preview (1).png" width="150">
+                <h2>Contact Info:</h2>
+                <p><span>Email:</span> NGO@gmail.com</p>
+                <p><span>Telephone:</span> +27 658 41258</p>
+                <p><span>Location:</span> 55 Andrews Drive, Cape Town, 7925</p>
+                <div class="footer-icons">
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+            </div>
+
+            <div class="foot-link">
+                <h1>Quick links</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="main"><a href="Volunteer.html">Volunteer</a></li>
+                    <li><a href="ContactPage.html">Contact</a></li>
+                    <li><a href="donationPage.html">Donate</a></li>
+                    <li><a href="About Us.html">About</a></li>
+                    <li><a href="">Projects</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h1>Subscribe to Our Newsletter</h1>
+                <p>Get the latest updates and news straight to your inbox.</p>
+                <div id="newsletter-container">
+                    <form action="#" method="post" class="newsletter-form" id="newsletterForm">
+                        <input type="email" name="email" id="eInput" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                
+
+                <ul>
+                    <li><a href="">Cookie Policy</a></li>
+                    <li class="middle-man"><a href="">Privacy Policy</a></li>
+                    <li><a href="">Frequently asked questions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <hr>
+            <p>&copyright preserved by Youth for a Change</p>
+        </div>
+    </section>
+    
+    <script src="java/volunteerJava.js"></script>
+
+</body>
+
+</html>

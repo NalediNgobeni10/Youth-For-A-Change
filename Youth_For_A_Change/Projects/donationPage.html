@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <link rel="stylesheet" href="css/donationpagestyle.css">
+    <script src="https://kit.fontawesome.com/58e6dfcba6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <nav>
+        <a href="" class="logo"><img src="images/logo-removebg-preview (1).png" alt=""></a>
+        <div class="list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects1.html">Projects</a></li>
+                <li><a href="About Us.html">About us</a></li>
+                <li class="main"><a href="donationPage.html">Donation</a></li>
+                <li><a href="Volunteer.html">Volunteer</a></li>
+                <li><a href="ContactPage.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="hinge">
+  <div class="donation-container">
+      <div class="donation-words">
+          <h2>EVERY BIT COUNTS</h2>
+          <p>Your donation fuels the dreams and aspirations of our youth. Every contribution helps us provide mentorship, education, and resources that inspire young minds to thrive. Together, we can nurture the next generation of leaders and change-makers.</p>
+      </div>
+      <div class="donate-message">
+          <div class="words">
+              <h1>Make a Donation</h1>
+          </div>
+          <form>
+              <div class="boxer">
+                  <label for="donation-amount">Donation Amount:</label>
+                  <input type="number" id="donation-amount" name="donation-amount" min="1" placeholder="Enter amount" required>
+              </div>
+              <div class="boxer">
+                  <label for="currency">Currency:</label>
+                  <select id="currency" name="currency">
+                      <option value="ZAR">ZAR</option>
+                      <option value="USD">USD</option>
+                      <option value="EUR">EUR</option>
+                      <option value="GBP">GBP</option>
+                  </select>
+              </div>
+              <label>Payment Frequency:</label>
+              <label for="once-off">
+                  <input type="radio" id="once-off" name="payment-frequency" value="once-off" checked>
+                  Once-Off
+              </label>
+              <label for="recurring">
+                  <input type="radio" id="recurring" name="payment-frequency" value="recurring">
+                  Recurring
+              </label>
+              <div id="recurring-options" style="display: none;">
+                  <label for="recurring-period">Select Recurring Period:</label>
+                  <select id="recurring-period" name="recurring-period">
+                      <option value="3-months">3 Months</option>
+                      <option value="6-months">6 Months</option>
+                      <option value="12-months">12 Months</option>
+                  </select>
+                  <p class="transaction-fee">R1.20 will be charged for every transaction</p>
+              </div>
+              <button type="submit" class="but">Donate Now</button>
+          </form>
+      </div>
+  </div>
+</div>
+
+<div id="confirmation-popup" class="popup" style="display: none;">
+  <div class="popup-content">
+      <h2>Confirm Your Donation</h2>
+      <p>You are about to pay <span id="confirm-amount"></span></p>
+      <p id="recurring-info" style="display: none;"></p> 
+      <button id="accept-btn">Accept</button>
+      <button id="decline-btn">Decline</button>
+  </div>
+</div>
+
+
+
+<section class="footer">
+        <div class="foot-container">
+            <div class="Contact">
+                <img class="pic1" src="images/logo-removebg-preview (1).png" width="150">
+                <h2>Contact Info:</h2>
+                <p><span>Email:</span> NGO@gmail.com</p>
+                <p><span>Telephone:</span> +27 658 41258</p>
+                <p><span>Location:</span> 55 Andrews Drive, Cape Town, 7925</p>
+                <div class="footer-icons">
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+    
+                </div>
+            </div>
+
+<div class="foot-link">
+                <h1>Quick  links</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Volunteer.html">Volunteer</a></li>
+                    <li><a href="ContactPage.html">Contact</a></li>
+                    <li class="main"><a href="donationPage.html">Donate</a></li>
+                    <li><a href="About Us.html">About</a></li>
+                    <li><a href="projects1.html">Projects</a></li>
+                </ul>
+            </div>
+<div class="newsletter">
+                <h1>Subscribe to Our Newsletter</h1>
+                <p>Get the latest updates and news straight to your inbox.</p>
+                <div id="newsletter-container">
+                    <form action="#" method="post" class="newsletter-form" id="newsletterForm">
+                        <input type="email" name="email" id="eInput" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                
+                    <div id="confirmation-box" class="hidden">
+                        <h2 id="confirmation-message"></h2>
+                        <button id="confirmation-ok">OK</button>
+                    </div>
+                </div>
+                                
+                <ul>
+                    <li><a href="">Cookie Policy</a></li>
+                    <li class="middle-man"><a href="">Privacy Policy</a></li>
+                    <li><a href="">Frequently asked questions</a></li>
+                </ul>
+            </div>
+        </div>
+  <div class="copyright">
+        <hr>
+        <p>&copyright preserved by Youth for a Change</p>
+  </div>
+    </section>
+
+
+    <script src="java/donationJava.js"></script>
+
+</body>
+</html>
